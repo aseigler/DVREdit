@@ -1,0 +1,434 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "filever.rcv"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""filever.rcv""\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\dvredit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\dvredit.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About dvredit"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "DVREdit Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004 - 2007",IDC_STATIC,40,30,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+    LTEXT           "Written by Alex Seigler (aseigler)",IDC_STATIC_MAILTO,40,20,119,8
+    CTEXT           "Version",IDC_VERSION,154,30,74,8
+    LTEXT           "Brought to you by:",IDC_STATIC_TGB_LABEL,40,42,62,9
+    LTEXT           "The Green Button",IDC_STATIC_TGB,106,42,60,9
+END
+
+IDD_DVREDIT_DIALOG DIALOGEX 0, 0, 356, 291
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_WINDOWEDGE | WS_EX_APPWINDOW
+CAPTION "DVREdit"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "Set In",IDC_BUTTON_IN,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,197,7,17,17
+    CONTROL         "Set Out",IDC_BUTTON_OUT,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,215,7,17,17
+    CONTROL         "Play",IDC_BUTTON_PLAY,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,46,7,17,17
+    CONTROL         "Stop",IDC_BUTTON_STOP,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,64,7,17,17
+    CONTROL         "Step Forward",IDC_BUTTON_STEP_FORWARD,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,103,7,17,17
+    CONTROL         "Commercial Skip",IDC_BUTTON_COMMERCIAL_SKIP,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,125,7,17,17
+    CONTROL         "Step Backward",IDC_BUTTON_STEP_BACKWARD,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,85,7,17,17
+    LTEXT           "Segment:",IDC_STATIC_SEGMENT_LABEL,238,11,32,8
+    CONTROL         "Previous",IDC_BUTTON_PREVIOUS_SEGMENT,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,270,7,17,17
+    CONTROL         "Next",IDC_BUTTON_NEXT_SEGMENT,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,301,7,17,17
+    CONTROL         "Clear Segment",IDC_BUTTON_CLEAR_SEGMENT,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,332,7,17,17
+    CTEXT           "",IDC_SEGMENT_NUMBER,287,11,12,8
+    CONTROL         "Segment start",IDC_BUTTON_SEGMENT_START,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,154,7,17,17
+    CONTROL         "Segment end",IDC_BUTTON_SEGMENT_END,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,171,7,17,17
+    CONTROL         "Load",IDC_BUTTON_LOAD,"Button",BS_OWNERDRAW | WS_TABSTOP,6,7,17,17
+    CONTROL         "Save",IDC_BUTTON_SAVE,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,25,7,17,17
+END
+
+IDD_MPG2DVR DIALOGEX 0, 0, 392, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Convert MPG file to DVR-MS"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Convert",IDOK,299,45,42,14
+    PUSHBUTTON      "Cancel",IDCANCEL,345,45,42,14
+    LTEXT           "Source File:",IDC_STATIC_SOURCE_LABEL,5,9,38,8
+    LTEXT           "Destination File:",IDC_STATIC_DEST_LABEL,5,25,51,8
+    EDITTEXT        IDC_EDIT_SOURCE_FILE,63,7,278,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DEST_FILE,63,23,278,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BUTTON_SOURCE_BROWSE,344,6,42,14
+    PUSHBUTTON      "Browse...",IDC_BUTTON_DEST_BROWSE,343,22,42,14
+    PUSHBUTTON      "Attributes",IDC_BUTTON_ATTRIBUTES,253,45,42,14
+END
+
+IDD_ATTRIBUTES_DIALOG DIALOGEX 0, 0, 266, 155
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Attributes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_TITLE,59,7,192,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SUBTITLE,59,26,192,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GENRE,59,45,192,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MEDIACREDITS,59,64,192,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DESCRIPTION,59,83,194,42,ES_MULTILINE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,154,134,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,204,134,50,14
+    LTEXT           "Title:",IDC_STATIC_LABEL_TITLE,11,10,45,8
+    LTEXT           "Description:",IDC_STATIC_LABEL_DESCRIPTION,11,86,45,8
+    LTEXT           "SubTitle:",IDC_STATIC_LABEL_SUBTITLE,11,29,45,8
+    LTEXT           "Genre:",IDC_STATIC_LABEL_GENRE,11,48,45,8
+    LTEXT           "MediaCredits:",IDC_STATIC_LABEL_MEDIACREDITS,11,67,45,8
+END
+
+IDD_DVR2MPG DIALOGEX 0, 0, 392, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Convert DVR-MS file to MPG"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Convert",IDOK,299,45,42,14
+    PUSHBUTTON      "Cancel",IDCANCEL,345,45,42,14
+    LTEXT           "Source File:",IDC_STATIC_SOURCE_LABEL,5,9,38,8
+    LTEXT           "Destination File:",IDC_STATIC_DEST_LABEL,5,25,51,8
+    EDITTEXT        IDC_EDIT_SOURCE_FILE,63,7,278,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DEST_FILE,63,23,278,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BUTTON_SOURCE_BROWSE,344,6,42,14
+    PUSHBUTTON      "Browse...",IDC_BUTTON_DEST_BROWSE,343,22,42,14
+END
+
+IDD_REFERENCE2CONTENT DIALOGEX 0, 0, 298, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Convert reference to content..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,187,52,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,241,52,50,14
+    LTEXT           "Reference recording:",IDC_STATIC_REFERENCE_RECORDING,9,9,69,10
+    LTEXT           "Content recording:",IDC_STATIC_CONTENT_RECORDING,9,32,69,10
+    EDITTEXT        IDC_EDIT_CONTENT_RECORDING,90,30,137,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REFERENCE_RECORDING,90,7,137,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BROWSE_CONTENT_RECORDING,246,31,45,13
+    PUSHBUTTON      "B&rowse...",IDC_BROWSE_REFERENCE_RECORDING,246,8,45,13
+END
+
+IDD_COMBINERECORDINGS DIALOGEX 0, 0, 289, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Combine Recordings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,171,163,50,14
+    PUSHBUTTON      "Close",IDCANCEL,232,163,50,14
+    LISTBOX         IDC_LIST_COMBINE,7,7,219,144,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES
+    PUSHBUTTON      "&Add",IDC_BUTTON_COMBINE_ADD,232,17,50,14
+    PUSHBUTTON      "&Remove",IDC_BUTTON_COMBINE_REMOVE,232,32,50,14
+END
+
+IDD_DEFAULTDECODER DIALOGEX 0, 0, 308, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,251,21,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,251,48,50,14
+    COMBOBOX        IDC_COMBO_VIDEO,7,22,240,114,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_AUDIO,7,49,240,167,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Video Decoder:",IDC_STATIC,7,11,56,10
+    LTEXT           "Audio Decoder:",IDC_STATIC,7,38,63,10
+END
+
+IDD_METADATAEDITOR DIALOGEX 0, 0, 286, 64
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Metadata Editor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Save",IDOK,227,32,50,14
+    PUSHBUTTON      "C&ancel",IDCANCEL,227,46,50,14
+    LTEXT           "File:",IDC_STATIC,9,7,14,8
+    EDITTEXT        IDC_EDIT1,51,5,156,13,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Attribute:",IDC_STATIC,9,21,32,8
+    LTEXT           "Datatype:",IDC_STATIC,9,35,34,8
+    LTEXT           "Value:",IDC_STATIC,9,49,21,8
+    COMBOBOX        IDC_COMBO1,51,19,156,12,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,51,33,156,77,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT2,51,47,156,13,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DVREDIT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 284
+    END
+
+    IDD_MPG2DVR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_ATTRIBUTES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_DVR2MPG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_REFERENCE2CONTENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_COMBINERECORDINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_DEFAULTDECODER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 301
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open",                       ID_FILE_OPEN32771
+        MENUITEM "&Save As...",                 ID_FILE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&DVR to MPG...",              ID_TOOLS_DVRTOMPG
+        MENUITEM "&MPG to DVR...",              ID_TOOLS_MPGTODVR
+        MENUITEM "&Convert reference to content...", ID_TOOLS_OPENREFERENCERECORDING
+        MENUITEM "&Append recordings...",       ID_TOOLS_APPENDRECORDINGS
+        MENUITEM "D&ump elementary streams...", ID_TOOLS_DUMPELEMENTARYSTREAMS
+        MENUITEM "D&efault decoders...",        ID_TOOLS_DEFAULTDECODERS
+        MENUITEM "Ed&it Metadata...",           ID_TOOLS_EDITMETADATA
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+PLAYU                   BITMAP                  "res\\playu.bmp"
+PLAYD                   BITMAP                  "res\\playd.bmp"
+IDB_BITMAP_TEMPLATEU    BITMAP                  "res\\templateu.bmp"
+STOPU                   BITMAP                  "res\\stopu.bmp"
+STOPD                   BITMAP                  "res\\stopd.bmp"
+IDB_BITMAP_TEMPLATED    BITMAP                  "res\\templated.bmp"
+LOADU                   BITMAP                  "res\\loadu.bmp"
+LOADD                   BITMAP                  "res\\loadd.bmp"
+STEP_FORWARDU           BITMAP                  "res\\step_forwardu.bmp"
+STEP_FORWARDD           BITMAP                  "res\\step_forwardd.bmp"
+PLAYX                   BITMAP                  "res\\playx.bmp"
+STOPX                   BITMAP                  "res\\stopx.bmp"
+STEP_FORWARDX           BITMAP                  "res\\step_forwardx.bmp"
+STEP_BACKWARDU          BITMAP                  "res\\step_backwardu.bmp"
+STEP_BACKWARDD          BITMAP                  "res\\step_backwardd.bmp"
+STEP_BACKWARDX          BITMAP                  "res\\step_backwardx.bmp"
+SEGMENT_PREVU           BITMAP                  "res\\segment_prevu.bmp"
+SEGMENT_PREVD           BITMAP                  "res\\segment_prevd.bmp"
+SEGMENT_PREVX           BITMAP                  "res\\segment_prevx.bmp"
+SEGMENT_NEXTU           BITMAP                  "res\\segment_nextu.bmp"
+SEGMENT_NEXTD           BITMAP                  "res\\segment_nextd.bmp"
+SEGMENT_NEXTX           BITMAP                  "res\\segment_nextx.bmp"
+SEGMENT_CLEARU          BITMAP                  "res\\segment_clearu.bmp"
+SEGMENT_CLEARD          BITMAP                  "res\\segment_cleard.bmp"
+SEGMENT_CLEARX          BITMAP                  "res\\segment_clearx.bmp"
+INU                     BITMAP                  "res\\inu.bmp"
+IND                     BITMAP                  "res\\ind.bmp"
+INX                     BITMAP                  "res\\inx.bmp"
+OUTU                    BITMAP                  "res\\outu.bmp"
+OUTD                    BITMAP                  "res\\outd.bmp"
+OUTX                    BITMAP                  "res\\outx.bmp"
+IDB_30U                 BITMAP                  "res\\30u.bmp"
+IDB_30D                 BITMAP                  "res\\30d.bmp"
+IDB_30X                 BITMAP                  "res\\30x.bmp"
+SEGMENT_PLAYU           BITMAP                  "res\\segment_playu.bmp"
+SEGMENT_PLAYD           BITMAP                  "res\\segment_playd.bmp"
+SEGMENT_PLAYX           BITMAP                  "res\\segment_playx.bmp"
+SEGMENT_ENDU            BITMAP                  "res\\segment_endu.bmp"
+SEGMENT_ENDD            BITMAP                  "res\\segment_endd.bmp"
+SEGMENT_ENDX            BITMAP                  "res\\segment_endx.bmp"
+SEGMENT_STARTU          BITMAP                  "res\\segment_startu.bmp"
+SEGMENT_STARTD          BITMAP                  "res\\segment_startd.bmp"
+SEGMENT_STARTX          BITMAP                  "res\\segment_startx.bmp"
+SAVEU                   BITMAP                  "res\\saveu.bmp"
+SAVED                   BITMAP                  "res\\saved.bmp"
+SAVEX                   BITMAP                  "res\\savex.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS 
+BEGIN
+    "B",            ID_ACCELERATOR_BACK,    VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_ACCELERATOR_FORWARD, VIRTKEY, CONTROL, NOINVERT
+    "[",            ID_ACCELERATOR_IN1,     ASCII,  NOINVERT
+    "]",            ID_ACCELERATOR_OUT1,    ASCII,  NOINVERT
+    "P",            ID_ACCELERATOR_PAUSE,   VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_ACCELERATOR_PLAY,    VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "R",            ID_ACCELERATOR_RECORD,  VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_ACCELERATOR_STOP,    VIRTKEY, CONTROL, NOINVERT
+    "1",            ID_ACCELERATOR_IN2,     VIRTKEY, NOINVERT
+    "3",            ID_ACCELERATOR_OUT2,    VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About dvredit..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\dvredit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CombineRecordings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dvr2MPG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dvredit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DVREditDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HyperLink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MetadataEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MPG2Dvr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Reference2Content.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Segment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CombineRecordings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dvr2MPG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dvredit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DVREditDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filever.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HyperLink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MetadataEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MPG2Dvr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Reference2Content.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Segment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="filever.rcv">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="res\30d.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\30u.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\30x.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00002.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00003.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00004.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00005.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00006.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00007.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00008.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00009.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00010.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\dvredit.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\dvredit.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="filever.vbs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ind.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\inu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\inx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\loadd.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\loadf.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\loadu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\loadx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\outd.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\outu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\outx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\playd.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\playd1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\playf.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\playu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\playx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\saved.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\saveu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\savex.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_cleard.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_clearu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_clearx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_endd.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_endu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_endx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_nextd.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_nextu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_nextx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_playd.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_playu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_playx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_prevd.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_prevu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_prevx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_startd.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_startu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\segment_startx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\step_backwardd.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\step_backwardf.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\step_backwardu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\step_backwardx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\step_forwardd.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\step_forwardf.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\step_forwardu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\step_forwardx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\stopd.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\stopd1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\stopf.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\stopu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\stopx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\templated.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\templateu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dvredit.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="res\dvredit.manifest" />
+  </ItemGroup>
+</Project>

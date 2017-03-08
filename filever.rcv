@@ -1,0 +1,49 @@
+#ifdef RC_INVOKED
+
+#include "filever.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#define MAKEFILEVERSION(_rmaj, _rmin, _bmaj, _bmin)			#_rmaj "." #_rmin "." #_bmaj "." #_bmin
+#define MAKE_FILEVERSION_STR(_rmaj, _rmin, _bmaj, _bmin)	MAKEFILEVERSION(_rmaj, _rmin, _bmaj, _bmin)
+
+#define VER_FILEVERSION					rmj, rmn, rmm, rup
+#define VER_FILEVERSION_STR				MAKE_FILEVERSION_STR(rmj, rmn, rmm, rup)
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION VER_FILEVERSION
+ PRODUCTVERSION 0,0,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "By Alex Seigler (alexseigler@hotmail.com)"
+            VALUE "FileDescription", "DVR-MS file editor"
+            VALUE "FileVersion", VER_FILEVERSION_STR	"\0"
+            VALUE "InternalName", "DVREdit"
+            VALUE "LegalCopyright", "Copyright© 1986-2004 Alex Seigler All rights reserved."
+            VALUE "OriginalFilename", "DVREdit.exe"
+            VALUE "ProductName", "DVREdit Application"
+            VALUE "ProductVersion", "1.5"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif
